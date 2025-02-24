@@ -1,0 +1,21 @@
+~ start
+Cau: [b] [shake rate=20 level=10]Help! Help!! My other wagon has been stolen by bandits! Help me! [/shake]
+Totoy: I’m here! I’ll help you! 
+Cau: [b]Here! Ride my other wagon! 
+
+~ title
+[i]Totoy is riding a wagon at a speed of 15 m/s and is capturing bandits that stole a wagon 120 m ahead moving at a constant speed of 10 m/s. If Totoy maintains his speed, how long will it take for him to catch up to the other wagon?
+- 12s
+	Nope! That's too fast. You fell in a sinkhole
+	=> title
+- 15s
+	That's too early than the correct time.
+	=> title
+- 24s
+Correct! That's the exact time that you will wait to catch up! Don't worry you catched them.
+
+Cau: Thank you very much for your help! Here’s a bow and a couple of arrows that you can use in the future. It’s scary out here you know… 
+
+Totoy: Thanks! 
+
+=> END

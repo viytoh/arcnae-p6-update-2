@@ -1,0 +1,11 @@
+~ start
+TA mob is pushing you with a force applied 500 N east, trying to out-balance him. How much force must you use on the mob to neutralize it?
+- 500 N north
+	You pushed the wrong direction! As a result, you attained 20 damage from the push.
+	=> start
+- 400 N west
+	You pushed in the right direction but the force was not enough. You attained 10 damage.
+	=> start
+- 500 N west
+	Correct! The mob’s attack is completely neutraluzed. 
+=> END

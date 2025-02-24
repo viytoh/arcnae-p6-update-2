@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=5 format=3 uid="uid://cj1yxqpewg77u"]
+
+[ext_resource type="Script" path="res://Items/scripts/item_data.gd" id="1_eq2mq"]
+[ext_resource type="Script" path="res://Items/item_effects/item_effect.gd" id="1_yrnrs"]
+[ext_resource type="Texture2D" uid="uid://ducbkc4o5j2c3" path="res://Items/sprites/items.png" id="3_sxtot"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2201m"]
+atlas = ExtResource("3_sxtot")
+region = Rect2(0, 0, 32, 32)
+
+[resource]
+script = ExtResource("1_eq2mq")
+name = "Gem"
+description = "A valuable piece of rock!"
+texture = SubResource("AtlasTexture_2201m")
+effects = Array[ExtResource("1_yrnrs")]([])

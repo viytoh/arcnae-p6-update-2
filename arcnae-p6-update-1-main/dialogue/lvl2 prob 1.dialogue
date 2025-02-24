@@ -1,0 +1,10 @@
+~ start
+Totoy and a mob are both in the origin. The mob dashes 3m east then 4m north. What is the distance of the shortest route that Totoy should take in order to attack the mob?
+- 20m
+	You went too far and missed your attack!
+	=> start
+- 5m
+	Exactly! You caught the mob and attacked it from behind.
+- 4m
+	You fell short in the distance and failed to catch up. 
+	=> start

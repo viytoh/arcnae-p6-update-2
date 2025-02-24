@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=5 format=3 uid="uid://dio4y02e1js0v"]
+
+[ext_resource type="Script" path="res://Items/scripts/item_data.gd" id="1_6ojn2"]
+[ext_resource type="Script" path="res://Items/item_effects/item_effect.gd" id="1_sist6"]
+[ext_resource type="Texture2D" uid="uid://c5ju6sf2lt1x6" path="res://Items/sprites/ARCANEPHYSICS_SPRITES.png" id="2_oipp5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hph42"]
+atlas = ExtResource("2_oipp5")
+region = Rect2(313, 60, 240, 223)
+
+[resource]
+script = ExtResource("1_6ojn2")
+name = "Kinematics02"
+description = "The second of four kinematic equations!"
+texture = SubResource("AtlasTexture_hph42")
+effects = Array[ExtResource("1_sist6")]([])

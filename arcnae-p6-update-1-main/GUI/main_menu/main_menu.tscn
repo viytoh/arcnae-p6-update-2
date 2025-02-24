@@ -1,0 +1,68 @@
+[gd_scene load_steps=6 format=3 uid="uid://cn11fwyifhqfk"]
+
+[ext_resource type="Script" path="res://GUI/main_menu/main_menu.gd" id="1_1o4i8"]
+[ext_resource type="Texture2D" uid="uid://bjpqy1r4k8xho" path="res://GUI/main_menu/Visuals/Summer6.png" id="1_qd30d"]
+[ext_resource type="Texture2D" uid="uid://2has8upvdsyr" path="res://GUI/main_menu/Visuals/1.png" id="2_mnb5h"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kfwoy"]
+texture = ExtResource("1_qd30d")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nx8lv"]
+texture = ExtResource("2_mnb5h")
+
+[node name="MainMenu" type="CanvasLayer"]
+script = ExtResource("1_1o4i8")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_kfwoy")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 260.0
+offset_top = 10.0
+offset_right = 653.0
+offset_bottom = 301.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_nx8lv")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -133.0
+offset_top = -137.0
+offset_right = 139.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 10
+
+[node name="Button_New" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 20
+text = "New Game"
+
+[node name="Button_Load" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 20
+text = "Load Game"
+
+[node name="Button_Exit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 20
+text = "Exit"
+
+[connection signal="pressed" from="VBoxContainer/Button_New" to="." method="_on_button_new_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button_Load" to="." method="_on_button_load_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button_Exit" to="." method="_on_button_exit_pressed"]

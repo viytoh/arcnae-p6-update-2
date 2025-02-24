@@ -1,0 +1,133 @@
+[gd_scene load_steps=8 format=3 uid="uid://bw26r8lrtgc5l"]
+
+[ext_resource type="Texture2D" uid="uid://csg264pvb8mgv" path="res://Battle(Physics)/BattleScene/sprite/d874gjl-59e79083-fec5-4234-8879-2aa8afd7f9f4.png" id="1_88xac"]
+[ext_resource type="Script" path="res://Battle(Physics)/BattleScene/scripts/battle01.gd" id="1_sx2te"]
+[ext_resource type="Texture2D" uid="uid://c6vw30x811odt" path="res://GUI/dialouge_system/sprites/text-bubble.png" id="2_c2be0"]
+[ext_resource type="FontFile" uid="uid://dqynfbikfwkxy" path="res://GUI/fonts/Abaddon Light.ttf" id="3_oefff"]
+[ext_resource type="FontFile" uid="uid://b0j83jpjdqy81" path="res://GUI/fonts/Abaddon Bold.ttf" id="4_dnevl"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_afkgx"]
+content_margin_left = 14.0
+content_margin_top = 10.0
+content_margin_right = 14.0
+content_margin_bottom = 10.0
+texture = ExtResource("2_c2be0")
+texture_margin_left = 10.0
+texture_margin_top = 10.0
+texture_margin_right = 10.0
+texture_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qvum6"]
+content_margin_left = 14.0
+content_margin_top = 10.0
+content_margin_right = 14.0
+content_margin_bottom = 10.0
+texture = ExtResource("2_c2be0")
+texture_margin_left = 10.0
+texture_margin_top = 10.0
+texture_margin_right = 10.0
+texture_margin_bottom = 10.0
+
+[node name="BattleScene" type="CanvasLayer"]
+layer = 3
+script = ExtResource("1_sx2te")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_88xac")
+
+[node name="PanelContainer" type="PanelContainer" parent="Control"]
+layout_mode = 2
+offset_left = 18.0
+offset_top = 294.0
+offset_right = 652.0
+offset_bottom = 419.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_afkgx")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/PanelContainer"]
+layout_mode = 2
+theme_override_colors/default_color = Color(0.439216, 0.396078, 0.321569, 1)
+theme_override_fonts/normal_font = ExtResource("3_oefff")
+theme_override_fonts/bold_font = ExtResource("4_dnevl")
+theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/bold_font_size = 30
+bbcode_enabled = true
+text = "Example [b]Text[/b]!!!
+[wave] Wavy text [/wave]
+[shake][color=orangered] Shaking[/color][shake]"
+
+[node name="Choices" type="PanelContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -263.0
+offset_top = -135.0
+offset_right = -6.0
+offset_bottom = -10.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_qvum6")
+
+[node name="Control" type="Control" parent="Control/Choices"]
+layout_mode = 2
+
+[node name="Button1" type="Button" parent="Control/Choices/Control"]
+layout_mode = 2
+offset_left = 2.0
+offset_top = -3.0
+offset_right = 110.0
+offset_bottom = 52.0
+size_flags_horizontal = 2
+size_flags_vertical = 3
+text = "option 1
+"
+
+[node name="Button2" type="Button" parent="Control/Choices/Control"]
+layout_mode = 2
+offset_left = 118.0
+offset_top = -3.0
+offset_right = 226.0
+offset_bottom = 52.0
+size_flags_horizontal = 2
+size_flags_vertical = 3
+text = "option 2
+"
+
+[node name="Button3" type="Button" parent="Control/Choices/Control"]
+layout_mode = 2
+offset_left = 2.0
+offset_top = 56.0
+offset_right = 110.0
+offset_bottom = 111.0
+size_flags_horizontal = 2
+size_flags_vertical = 3
+text = "option 3
+"
+
+[node name="Button4" type="Button" parent="Control/Choices/Control"]
+layout_mode = 2
+offset_left = 118.0
+offset_top = 56.0
+offset_right = 226.0
+offset_bottom = 111.0
+size_flags_horizontal = 2
+size_flags_vertical = 3
+text = "option 4"

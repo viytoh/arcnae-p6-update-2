@@ -1,0 +1,12 @@
+~ start
+Two mobs attack you from the same direction (due north). One applies a force of 400 N, and the other applies a force of 350 N. What is the total force that you must resist?
+- 400 N
+	The force you applied wasn't enough! The attack against you was succcesful and you got 10 damage!
+	=> start
+- 50 N
+	The force you applied was barely even defensive. You attained 25 damage!
+	=> start
+- 750 N 
+	You succesfully resisted the attack! Great defense! 
+
+=> END

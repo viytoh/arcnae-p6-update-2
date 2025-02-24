@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://ww7hopie0145"]
+
+[ext_resource type="Script" path="res://GUI/main_menu/title_screen.gd" id="1_o1glh"]
+[ext_resource type="FontFile" uid="uid://cy0vvuaq5a3dr" path="res://GUI/fonts/DePixelSchmal.ttf" id="3_3ok2b"]
+
+[node name="TitleScreen" type="CanvasLayer"]
+script = ExtResource("1_o1glh")
+
+[node name="Button_Start" type="Button" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -182.5
+offset_top = -70.0
+offset_right = 182.5
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_force_pass_scroll_events = false
+theme_override_fonts/font = ExtResource("3_3ok2b")
+theme_override_font_sizes/font_size = 20
+text = "Press here to start"
+
+[connection signal="pressed" from="Button_Start" to="." method="_on_button_start_pressed"]

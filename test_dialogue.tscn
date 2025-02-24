@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkx65aju5q3d3"]
+
+[sub_resource type="GDScript" id="GDScript_neogc"]
+script/source = "extends BaseDialogueTestScene
+
+
+func _ready() -> void:
+	var balloon = load(\"res://dialogue_balloon/balloon.tscn\").instantiate()
+	get_tree().current_scene.add_child(balloon)
+	balloon.start(resource, title)
+"
+
+[node name="Test Dialogue" type="Node2D"]
+script = SubResource("GDScript_neogc")

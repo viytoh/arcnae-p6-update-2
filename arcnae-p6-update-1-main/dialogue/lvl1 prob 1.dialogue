@@ -1,0 +1,15 @@
+~ start
+*Gets 3 pieces of rocks*… Choose between the following scenarios best showcases both high accuracy and precision to perfectly kill the mob. 
+- OP A
+	You successfully hit the mob with a critical hit! 
+- OP B
+	You only dealt 5  damage! It isn't enough
+	=> start
+- OP C
+	You didn't even hit the target and dealth 0 damage! Try again.
+	=> start
+- OP D
+	Almost there but it you didn't hit the mob. You dealt 0 damage.
+	=> start
+
+=> END

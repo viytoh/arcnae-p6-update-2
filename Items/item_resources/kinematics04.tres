@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3 uid="uid://cg4ajvqsrb2qv"]
+
+[ext_resource type="Script" path="res://Items/scripts/item_data.gd" id="1_obi64"]
+[ext_resource type="Texture2D" uid="uid://c5ju6sf2lt1x6" path="res://Items/sprites/ARCANEPHYSICS_SPRITES.png" id="2_dm38m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tmfwo"]
+atlas = ExtResource("2_dm38m")
+region = Rect2(315, 312, 229, 225)
+
+[resource]
+script = ExtResource("1_obi64")
+name = "Kinematics04"
+description = "The fourth of four kinematics equations!"
+texture = SubResource("AtlasTexture_tmfwo")

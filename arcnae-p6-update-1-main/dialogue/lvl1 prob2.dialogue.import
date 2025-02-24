@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://boe126edqmdfs"
+path="res://.godot/imported/lvl1 prob2.dialogue-60b2483d013314bc65e1ebc633ac79ab.tres"
+
+[deps]
+
+source_file="res://dialogue/lvl1 prob2.dialogue"
+dest_files=["res://.godot/imported/lvl1 prob2.dialogue-60b2483d013314bc65e1ebc633ac79ab.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,12 @@
+~ start
+As the battle intensifies, how much force must be used for a counter attack?
+- more than 500 N west
+	The counter attack was succesful and you defeated the mob!
+	=> start
+- less than 500 N west
+	The counter attack was failed! You attained 10 damage.
+	=> start
+- 300 N north
+	The counter attack was in the wrong direction! You dealt 0 damage and you attained 20 damage as a result!
+
+=> END

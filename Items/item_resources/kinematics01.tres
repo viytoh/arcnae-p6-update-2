@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=5 format=3 uid="uid://delf4ftvpi4eh"]
+
+[ext_resource type="Script" path="res://Items/scripts/item_data.gd" id="1_7b8di"]
+[ext_resource type="Script" path="res://Items/item_effects/item_effect.gd" id="1_e2f8d"]
+[ext_resource type="Texture2D" uid="uid://c5ju6sf2lt1x6" path="res://Items/sprites/ARCANEPHYSICS_SPRITES.png" id="2_p1h6w"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kv1wi"]
+atlas = ExtResource("2_p1h6w")
+region = Rect2(53, 60, 231, 223)
+
+[resource]
+script = ExtResource("1_7b8di")
+name = "Kinematics01"
+description = "The first of four kinematic equations!"
+texture = SubResource("AtlasTexture_kv1wi")
+effects = Array[ExtResource("1_e2f8d")]([null])

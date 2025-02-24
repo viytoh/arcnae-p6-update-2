@@ -1,0 +1,9 @@
+~ start
+Totoy: Ugh... my head’s killing me. [wait=1] What the—!?[wait=1] Where am I? [wait=1] What happened?
+[speed=0.3] He looks around, disoriented.
+Totoy: All I can remember is my name... and this weird flash of a memory. Back on Earth, I was some kind of physics genius. If that’s true, I need to figure out a way back home.
+[speed=0.3] He notices a wooden sword on his hand.
+Totoy: Guess this’ll have to do for now. Let’s see what I can make of this place.
+[shake]Random shaking for intense and ominous atmosphere. Mobs suddenly appear and attack Totoy as he collects his thoughts.
+Totoy: [shake][b]I need to finish them off before it's too late.[/b]
+=> END

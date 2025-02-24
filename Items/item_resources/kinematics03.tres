@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3 uid="uid://qvii5uqfbo0s"]
+
+[ext_resource type="Script" path="res://Items/scripts/item_data.gd" id="1_3xin2"]
+[ext_resource type="Texture2D" uid="uid://c5ju6sf2lt1x6" path="res://Items/sprites/ARCANEPHYSICS_SPRITES.png" id="2_pmbij"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6p2di"]
+atlas = ExtResource("2_pmbij")
+region = Rect2(56, 316, 230, 224)
+
+[resource]
+script = ExtResource("1_3xin2")
+name = "Kinematic03"
+description = "The third of four kinematic equations!"
+texture = SubResource("AtlasTexture_6p2di")

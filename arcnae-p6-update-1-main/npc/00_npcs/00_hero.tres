@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="NPCResource" load_steps=3 format=3 uid="uid://jkobtwasorw1"]
+
+[ext_resource type="Texture2D" uid="uid://blcj4neie13df" path="res://npc/sprites/portraits/hero_portrait.png" id="1_2cwb0"]
+[ext_resource type="Script" path="res://npc/scripts/npc_resource.gd" id="1_cluab"]
+
+[resource]
+script = ExtResource("1_cluab")
+npc_name = "Totoy"
+portrait = ExtResource("1_2cwb0")

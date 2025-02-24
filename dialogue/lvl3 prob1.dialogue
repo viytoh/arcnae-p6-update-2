@@ -1,0 +1,14 @@
+~ title
+Kiinasa: Hello there young lad, I am Kiinasa, an old vendor. I wish to deliver a message to my son in Parfum, one of the hardest and toughest locations in the region. Unfortunately, I am no longer in my prime years to travel and no adventurers were willing to do the job for me because of the possible risks and length of the journey. Are you willing to take it? 
+- Yes, absolutely     
+- Yes, with a good price      
+- Hmmm, fine
+
+If Parfum is 5000 km away from Totoy's current location, he is tasked to deliver the message exactly in 3 days, what should be his exact average speed? (km/h)
+- 69.44 km/h
+	That was the exact speed! You reached their exactly on time.
+- 58.34 km/h 
+	That's a bit too slow! You reached the destination but you were late.
+- 105 km/h
+	That speed would bring you there too early than the desired date.
+=> END
